@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    // Perimeter of rectangle = a+b+a+b.
+    int a=4;
+    int b=6;
+    int sum = a+b+a+b;
+    cout<<"The Perimeter of rectangle "<<sum;
+
+
+    return 0;
+}
