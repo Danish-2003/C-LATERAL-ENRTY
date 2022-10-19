@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+    // Let a= length of sides of a cube.
+
+    int a = 7;
+    int volume= a*a*a;
+    cout<<"The volume of the cube is "<<volume;
+
+    return 0;
+}
