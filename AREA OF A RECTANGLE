@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+// The area of rectangle = A=b*h
+int b=6;
+float h=7.8;
+float area = b*h;
+cout<<"The area of  the Rectangle is"<<area;
+
+    return 0;
+}
