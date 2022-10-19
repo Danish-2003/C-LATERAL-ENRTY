@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int c;
+    char a;
+    double s;
+    float w;
+    long n;
+    cin>>c>>n>>a>>w>>s;
+    cout<<c<<endl;
+    cout<<n<<endl;
+    cout<<a<<endl;
+    cout<<fixed<<setprecision(3)<<w<<endl;
+    cout<<fixed<<setprecision(9)<<s<<endl;
+    return 0;
+}
