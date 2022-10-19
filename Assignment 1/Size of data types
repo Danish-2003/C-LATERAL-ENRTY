@@ -1,0 +1,26 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a;
+    char b;
+    short c;
+    long d;
+    long long e;
+    float f;
+    double g;
+    long double h;
+    bool i;
+    cout<< "The size of int : "<< sizeof a<<endl;
+    cout<<"The size of char : "<< sizeof b<<endl;
+    cout<<"The size of short : "<<sizeof c<<endl;
+    cout<<"The size of long : "<<sizeof d<<endl;
+    cout<<"The size of long long : "<<sizeof e<<endl;
+    cout<<"The size of float : "<<sizeof f<<endl;
+    cout<<"The size of double : "<<sizeof g<<endl;
+    cout<<"The size of long double : "<<sizeof h<<endl;
+    cout<<"The size of bool : "<<sizeof i<<endl;
+
+    return 0;
+}
