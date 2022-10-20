@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int year;
+    cin>>year;
+    cout<<year;
+    cout<<endl;
+    if (year%4==0)
+    {
+        cout<<"Leap Year";
+
+    }
+    else{
+        cout<<"Normal Year";
+    }
+    
+
+    return 0;
+}
