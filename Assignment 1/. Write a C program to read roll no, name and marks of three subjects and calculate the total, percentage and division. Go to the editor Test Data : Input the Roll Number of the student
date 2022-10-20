@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+                                                       //  *****INPUT*****                                              
+        int p;                                        //       1. Marks
+        int c;                                       //        2 .Roll No.       
+        int ca;                                     //         3. Name          
+        cin>>p;
+        cin>>c;
+        cin>>ca;
+
+        int sum= p+c+ca; 
+        float pr= (sum*100)/300;
+        int r;           
+        string n;  
+        cin>>r>>n;
+        cout<<"ROLL NO : "<<r<<endl;
+        cout<<"NAME :"<<n<<endl;
+        
+
+        cout<<endl;
+       
+        cout<<"Marks in Physics : "<<p<<endl;
+        
+        cout<<"Merks in Chemistry : "<<c<<endl;
+       
+        cout<<"Marks in Computer Application : "<<ca<<endl;
+
+        cout<<"Total Marks : "<<sum<<endl;
+        cout<<"Percentage : "<<pr<<endl;
+        
+        if(sum>=270||sum<=270){
+            cout<<" First division ";
+        }
+        else if(sum<=200){
+            cout<<"Second division ";
+        }
+        else if(sum<=100){
+            cout<<"Third division ";
+
+        }
+        else{
+            cout<<"Fail ";
+        }
+    return 0;
+}
