@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    cout<<age;
+    cout<<endl;
+    if (age>=18)
+    {
+       cout<<"Eligible For Casting His/Her Vote";
+    }
+    else{
+        cout<<"Not Eligible For Casting His/Her Vote";
+    }
+    
+
+    return 0;
+}
