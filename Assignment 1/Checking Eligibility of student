@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+   
+    int p,m,c;
+    int sum;
+    int MP;  
+    MP=p+m;
+    sum=p+m+c;
+    cin>>p>>m>>c;
+    cout<<p<<endl;
+    cout<<m<<endl;
+    cout<<c;
+    cout<<endl;
+    if(p>=65&&m>=55&&c>=50 &&sum>=190&&MP>=140){
+        cout<<" Student is Eligible For Addmission";
+    }
+    else{
+        cout<<" Student is Not Eligible For Addmission";
+
+    }
+
+    return 0;
+}
