@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int h;
+    cin>>h;
+    cout<<h<<endl;
+    if(h==150){
+        cout<<" Average hieght";
+
+    }
+    if(h<150){
+        cout<<"Dwarf";
+    }
+    if (h>165){
+        cout<<"Tall";
+    }
+    return 0;
+}
