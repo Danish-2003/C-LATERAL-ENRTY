@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int x;
+    cin>>x;
+    cout<<x;
+    cout<<endl;
+    if (x>0)
+    {
+        cout<<"Positive";
+    }
+    else{
+        cout<<"Negative";
+    }
+    
+    return 0;
+}
