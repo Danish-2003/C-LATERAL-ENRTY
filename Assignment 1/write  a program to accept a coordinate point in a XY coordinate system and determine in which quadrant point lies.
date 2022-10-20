@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x,y;
+    cin>>x>>y;
+    cout<<x;
+    cout<<endl;
+    cout<<y<<endl;
+
+    if(x>=0&&y>=0){
+        cout<<" it lies in first quadrant";
+    }
+    if(x<=0&&y>=0){
+        cout<<" It lies in second quadrant";
+
+    }
+    if(x<=0&&y<=0){
+        cout<<" it lies in third quadrant";
+
+    }
+    if(x>=0&&y<=0){
+        cout<<" it lies in fourth quadrant";
+    }
+   
+    return 0;
+}
