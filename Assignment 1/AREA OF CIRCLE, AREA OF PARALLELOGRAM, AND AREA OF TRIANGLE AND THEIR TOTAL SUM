@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){ 
+     int h;
+     float r;
+     float pie=3.14;
+     float sum2;
+    
+
+ 
+     int s1,s2;
+     cout<<"Put the given values"<<endl;
+
+     cin>> h;
+     cin>> s1>>s2;
+     float sum= ((h/2)*(s1+s2));
+     cout<<"The area of parallelogram : \n"<<sum<<endl;
+
+     cout<<endl;
+
+     cout<<"Enter the radius : "<<endl;
+     cin>> r;
+     sum2=(pie*(r*r));
+     cout<<"Th area of cicle is :\n "<<sum2<<endl;
+
+     cout<<endl;
+    
+    float a,b,c;
+     cout<<"Enter the lengths of side of triangle :\n "<<endl;
+     cout<<endl;
+    cin>>a>>b>>c;
+    float s=(a+b+c);
+    float s11= s/2;
+    float sum3= sqrt(s11*((s11-a)*(s11-b)*(s11-c)));
+
+   
+   
+    cout<<endl;
+   
+    cout<<"The area of triangle is :\n"<<sum3;
+
+    cout<<endl;
+    float totalsum=sum+sum2+sum3;
+
+    cout<<"The total sum of triangle,circle and parallelogram is : \n"<<totalsum;
+
+
+
+    return 0;
+}
