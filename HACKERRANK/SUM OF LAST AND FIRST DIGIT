@@ -1,0 +1,19 @@
+ #include<bits/stdc++.h>
+ using namespace std;
+ int main(){
+     int a;
+     cin>>a;
+    while(a--){
+         int n;
+         cin>>n;
+         vector<int>v;
+        while(n!=0){
+             int digit=n%10;
+             v.push_back(digit);
+             n=n/10;
+        }
+        cout<<v[0]+v[v.size()-1]<<endl;
+    }
+     
+     return 0;
+ }
