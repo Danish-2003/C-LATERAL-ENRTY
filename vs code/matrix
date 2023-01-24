@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x,y;
+    cout<<"Enter the row  : "<<endl;
+    cin>>x;
+    cout<<"Enter the coloumn : "<<endl;
+    cin>>y;
+    int arr[x][y];
+    for(int i=0;i<x; i++)
+    {
+        for(int j=0;j<y;j++)
+        {
+            cin>>arr[i][j];
+        }
+    }
+    for(int i=0;i<x;i++)
+    {
+        for(int j=0;j<y;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+
+        
+    }
+    cout<<arr[2][2];
+
+    return 0;
+}
