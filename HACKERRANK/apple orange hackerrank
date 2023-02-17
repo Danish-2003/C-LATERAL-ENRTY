@@ -1,0 +1,45 @@
+//https://www.hackerrank.com/challenges/apple-and-orange/problem?h_r=internal-search&isFullScreen=true
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int s,t;
+    cin>>s>>t;
+    int app,org;
+    cin>>app>>org;
+
+    
+
+    int x,y;
+    cin>>x>>y;
+    int apl[x];
+    int orng[y];
+    
+    for(int i=0; i<x; i++){
+        cin>>apl[i];
+
+    }
+    for(int i=0; i<y; i++){
+        cin>>orng[i];
+    }
+    int applcount=0;
+    int orngecount =0;
+
+    for(int i=0; i<x; i++){
+        int pos=app+apl[i];
+        if(pos>=s&&pos<=t){
+            applcount++;
+        }
+    }
+        for(int i=0; i<y; i++){
+            int pos=org+orng[i];
+            if(pos<=t&&pos>=s){
+                orngecount++;
+
+            }
+        }
+        cout<<applcount<<endl<<orngecount<<endl;
+    
+    return 0;
+}
