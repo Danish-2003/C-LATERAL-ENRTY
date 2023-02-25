@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+struct node{
+    int data;
+    struct node *link;
+
+};
+int main(){
+    node *head= new node;
+    head->data=90;
+    head->link =nullptr;
+    node *next = new node;
+    next ->data=765;
+    next->link=nullptr;
+    head->link=next;
+
+    node *node1=new node;
+    node1->data=654;
+    node1->link=nullptr;
+    next->link=node1;
+
+    node *node2= new node;
+    node2->data=77;
+    node2->link=nullptr;
+    node1->link=node2;
+    
+
+    int count=0;
+    node *current = head;
+    while(head!=nullptr){
+        count++;
+        cout<<current->data<<" ";
+        current = current->link;
+        cout<<count;
+    }
+}
