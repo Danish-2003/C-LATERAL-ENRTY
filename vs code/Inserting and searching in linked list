@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+
+class node{
+    public:
+    int data;
+    node*link;
+
+    node(int val){
+        data=val;
+        link=nullptr;
+    }
+};
+void insertAtHead(node* &head, int val){
+    node*node1=new node( val );
+    node1->link=head;
+    head=node1;
+
+}
+void insertAtTail(node* &head, int val){
+    node* node2=new node( val);
+    if(head==nullptr){
+        head=node2;
+        return;
+
+    }
+    node* nodei=head;
+    while(nodei->link=nullptr){
+        nodei=nodei->link;
+
+    }
+    nodei->link=node2;
+
+}
+bool search(node* head,int key){
+    node*temp=head;
+    while(temp->data==key){
+        return true;
+    }
+    return false;
+}
+void display(node* head){
+    node* temp=head;
+    while(temp!=nullptr){
+        cout<<temp->data<<"-> ";
+        temp=temp->link;
+    }
+    cout<<"NULL"<<endl;
+}
+int main(){
+    node* head= nullptr;
+    insertAtHead(head,3);
+    insertAtHead(head,6);
+    display(head);
+    cout<<endl;
+
+    cout<<search(head,5);
+
+    return 0;
+}
