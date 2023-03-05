@@ -34,22 +34,25 @@ void inserAtTail(Node*&tail , int val){
 
 }
 void insertAtPosition(Node* &tail,Node* &head, int position, int val){
-   
-    Node*temp=head;
+    
     if(position==1){
         inserAtHead(head,val);
         return;
     }
-    if(temp->link==nullptr){
-        inserAtTail(head,val);
-    }
+    int count=1;
+    Node*temp=head;
     
     Node*PositionNode=new Node(val);
-    int count=1;
+    
     while(count<position-1){
         temp=temp->link;
         count++;
     }
+    if(temp->link==nullptr){
+        inserAtTail(tail,val);
+        return;
+    }
+    
     PositionNode->link=temp->link;
     temp->link=PositionNode;
 
