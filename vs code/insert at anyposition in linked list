@@ -33,7 +33,7 @@ void inserAtTail(Node*&tail , int val){
     tail=temp;
 
 }
-void insertAtPosition(Node* &head, int position, int val){
+void insertAtPosition(Node* &tail,Node* &head, int position, int val){
    
     Node*temp=head;
     if(position==1){
@@ -69,7 +69,7 @@ int main(){
     Node*tail=node1;
     inserAtHead(head,0);
     inserAtTail(tail,2);
-    insertAtPosition(head,4,3);
+    insertAtPosition(tail,head,4,3);
     Display(head);
     
 
