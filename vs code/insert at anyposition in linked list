@@ -1,0 +1,79 @@
+#include<iostream>
+using namespace std;
+
+class Node{
+    public:
+    int data;
+    Node*link;
+
+    Node(int val){
+        data=val;
+        link=nullptr;
+    }
+};
+
+void inserAtHead( Node* &head, int val){
+
+    //creating a new node
+    Node*newNode=new Node(val);
+    if(head==nullptr){
+        head=newNode;
+        return;
+    }
+   
+   newNode->link=head;
+   head=newNode;
+
+    
+}
+void inserAtTail(Node*&tail , int val){
+
+    Node*temp=new Node(val);  
+    tail->link=temp;
+    tail=temp;
+
+}
+void insertAtPosition(Node* &head, int position, int val){
+   
+    Node*temp=head;
+    if(position==1){
+        inserAtHead(head,val);
+        return;
+    }
+    if(temp->link==nullptr){
+        inserAtTail(head,val);
+    }
+    
+    Node*PositionNode=new Node(val);
+    int count=1;
+    while(count<position-1){
+        temp=temp->link;
+        count++;
+    }
+    PositionNode->link=temp->link;
+    temp->link=PositionNode;
+
+}
+void Display(Node* &head){
+    Node*temp=head;
+    while(temp!=nullptr){
+        cout<<temp->data<<"->";
+        temp=temp->link;
+    }
+    cout<<"NULL";
+
+}
+int main(){
+    Node*node1=new Node(1);
+    Node*head=node1;
+    Node*tail=node1;
+    inserAtHead(head,0);
+    inserAtTail(tail,2);
+    insertAtPosition(head,3,3);
+    Display(head);
+    
+
+    return 0;
+}
+
+    
