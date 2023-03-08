@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int N;
+        cin>>N;
+        int A[N];
+        int neg=0;
+        int pos=0;
+        int Zero=0;
+        for(int i=0; i<N; i++){
+            cin>>A[i];
+        }
+        for(int i=0;i<N; i++){
+            if(A[i]<0)
+                neg=neg+1;
+       
+            if(A[i]>0)
+                pos=pos+1;
+            
+            if(A[i]==0)
+                Zero=Zero+1;
+            
+        }
+        cout<<"POS "<<pos<<" "<<"NEG "<<neg<<" "<<"ZERO"<<Zero<<endl;
+
+
+    }
+    return 0;
+}
