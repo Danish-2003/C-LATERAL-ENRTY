@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    vector<int>arr(n);
+    for(int i=0; i<n;i++){
+        // inserting the elements
+        cin>>arr[i];
+    }
+    // count variable so that it can reduce the itration 
+    int count=1;
+    while(count<n){
+         for(int i=0;i<n-count; i++){
+        if(arr[i]>arr[i+1]){
+            swap(arr[i],arr[i+1]);
+            
+        }
+    }
+    // It will decrease the number of times the for loop will run
+    count++;
+    }
+    for(int i=0;i<n;i++){    
+        cout<<arr[i]<<" ";    
+    }
+    return 0;
+}
