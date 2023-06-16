@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int sum=1;
+    int temp=n;
+    while(n>0){
+        int lastdigit=n%10;
+        sum+=pow(lastdigit,3);
+        n=n/10;
+    }
+
+    if(sum==temp){
+        cout<<"Armstrong number";
+    }
+    else{
+        cout<<"Not-Armstrong number";
+    }
+    return 0;
+}
